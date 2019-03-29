@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/rangeslider.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
   <meta name="theme-color" content="#fafafa">
@@ -65,6 +66,20 @@
           </div>
         </div>
       </section>
+      <section>
+          <p style="margin-top:450px"></p>
+          <span class="range-question">Frage....</span>
+          <input
+                  type="range"
+                  min="10"
+                  max="1000"
+                  step="10"
+                  value="300"
+                  data-orientation="horizontal"
+              >
+          <output></output>
+      </section>
+      <section>3</section>
       <section class="background-image" style="background-image: url(img/Osnabrueck_NOZ.jpg)">
       </section>
       <section class="background-image" style="background-image: url(img/150831731.jpg)">3</section>
@@ -136,6 +151,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/toastr.min.js"></script>
+  <script src="js/vendor/rangeslider.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>');
     toastr.options = {
@@ -161,6 +177,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/module/covervid.min.js"></script>
   <script src="js/module/quiz.js"></script>
+  <script src="js/module/rangeSlider.js"></script>
   <script src="js/main.js"></script>
 </body>
 
