@@ -120,8 +120,8 @@ function loadRankingList() {
     "score": user.score
   });
 
-  var sortedRanking = ranking.sort(function (a, b) {
-    return a.score - b.score
+  var sortedRanking = ranking.sort(function (current, next) {
+    return next.score - current.score
   });
   for (var i in sortedRanking) {
     $(".js-ranking-list").append("<li>" + sortedRanking[i].username + " <small>(Punkte: " + sortedRanking[i].score + ")</small></li>");
