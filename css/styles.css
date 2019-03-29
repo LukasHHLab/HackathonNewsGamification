@@ -1,97 +1,141 @@
+@import url('../fonts/FiraSans-Regular.ttf');
 
 body {
+
   margin: 0;
   top: 0;
-
-}
-
-.logo {
-  color: darkblue;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 24pt;
-  margin-left: 10px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .header {
   height: 80px;
   width: 100vw;
   display: flex;
-  background: lightgray;
+  background: #67C5C2;
   justify-content: space-between;
+  color: white;
 }
 
-.user {
+.logo {
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 10px;
+  font-size: 24pt;
+  margin-left: 10px;
+}
+
+.active.user {
+    /* color: #3D2117; */
+    background: #C84127;
 }
 
 .user-icon {
-  height: 48px;
-  width: auto;
+  font-size: 32pt;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.user-score {
+  background: Tomato;
+  font-size: 36pt;
 }
 
 .profile {
-    display: none;
-    background: lightblue;
+  display: none;
+  background: #C84127;
 }
 
 .profile-ranking {
-    display: none;
+  display: none;
+}
+
+.profile-badges {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-badges-item {
+    border: 1px solid #969696;
+    border-radius: 2px;
+    padding: 10px;
+    width: 120px;
+    height: 140px;
+    margin: 5px;
+    display: inline-grid;
+    
+}
+
+.profile-badges-item-icon {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36pt;
+}
+
+.profile-badges-item-name {
+    margin-top: 5px;
+    text-align: center;
 }
 
 .newuser {
-    display: none;
+  display: none;
 }
 
-.tabbed figure { 
-    display: block; 
-    margin-left: 0; 
-    clear: both;
- }
- 
- .tabbed > input,
- .tabbed figure > div { display: none; }
- 
- .tabbed figure>div {
-   padding: 20px;
-   width: 100%;
-   background: #fff;
-   line-height: 1.5em;
-   letter-spacing: 0.3px;
- }
+.tabbed figure {
+  display: block;
+  margin-left: 0;
+  clear: both;
+}
 
-#tabProfile:checked ~ figure .tabProfile,
-#tabRanking:checked ~ figure .tabRanking { display: block; }
+.tabbed>input,
+.tabbed figure>div {
+  display: none;
+}
+
+.tabbed figure>div {
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+}
+
+#tabProfile:checked~figure .tabProfile,
+#tabRanking:checked~figure .tabRanking {
+  display: block;
+}
 
 nav label {
-    float: left;
-    padding: 15px 15px;
-    background: hsl(210,50%,50%);
-    color: #eee;
-    width: auto;
- }
- 
- nav label:hover { background: hsl(210,50%,40%); }
- nav label:active { background: #ffffff; }
- 
- #tabProfile:checked ~ nav label[for="tabProfile"],
- #tabRanking:checked ~ nav label[for="tabRanking"] {
-   background: white;
-   color: #111;
-   position: relative;
-   border-bottom: none;
- }
- 
- #tabProfile:checked ~ nav label[for="tabProfile"]:after,
- #tabRanking:checked ~ nav label[for="tabRanking"]:after{
-   content: "";
-   display: block;
-   position: absolute;
-   height: 2px;
-   width: 100%;
-   background: white;
-   left: 0;
-   bottom: -1px;
- }
+  float: left;
+  padding: 15px 15px;
+  background: #C84127;
+  color: #eee;
+  width: auto;
+}
+
+nav label:hover {
+  background: #C84127;
+}
+
+nav label:active {
+  background: #ffffff;
+}
+
+#tabProfile:checked~nav label[for="tabProfile"],
+#tabRanking:checked~nav label[for="tabRanking"] {
+  background: white;
+  color: #111;
+  position: relative;
+  border-bottom: none;
+}
+
+#tabProfile:checked~nav label[for="tabProfile"]:after,
+#tabRanking:checked~nav label[for="tabRanking"]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  left: 0;
+  bottom: -1px;
+}

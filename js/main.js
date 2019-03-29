@@ -17,10 +17,16 @@ function initUser(username) {
     "username": username,
     "score": 0,
     "badges": [{
-      "badgeName": "Entdecker",
-      "badgeDescription": "Beende deine erste IStory.",
-      "earnedAt": "28.03.2019 12:55"
-    }]
+        "badgeName": "Erste Schritte",
+        "badgeIcon": "fas fa-shoe-prints",
+        "badgeDescription": "Erstelle ein Benutzerprofil."
+      },
+      {
+        "badgeName": "NewsFindMe",
+        "badgeIcon": "fas fa-newspaper",
+        "badgeDescription": "Nimm am NewsFindMe-Hackathon teil."
+      }
+    ]
   };
 
   saveUser(user);
@@ -46,8 +52,10 @@ function reloadBadgesView() {
   $(".js-profile-badges").empty();
 
   for (var i in user.badges) {
-    $(".js-profile-badges").append("<li>" + user.badges[i].badgeName + " <small>" + user.badges[i].earnedAt +
-      "</small></li>");
+    $(".js-profile-badges").append("<div class='profile-badges-item'><span class='fa-layers fa-fw profile-badges-item-icon'>" +
+      "<i class='fas fa-trophy'></i><i class='fa-inverse " + user.badges[i].badgeIcon + "' data-fa-transform='shrink-12 up-3' style='color:Tomato'></i>" +
+      "</span><span class='profile-badges-item-name'>" + user.badges[i].badgeName + " </span><small class='profile-badges-item-description'>" + user.badges[i].badgeDescription +
+      "</small></div>");
   }
 
 }
