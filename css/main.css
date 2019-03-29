@@ -107,13 +107,18 @@ textarea {
     z-index: 2;
 }
 
-article {
+article,
+section {
     height: 100vh !important;
     width: 100vw !important;
-    background-color: #0099FF;
     box-sizing: border-box;
 }
 
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 
 
