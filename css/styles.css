@@ -32,7 +32,66 @@ body {
   width: auto;
 }
 
-.modal {
+.profile {
     display: none;
     background: lightblue;
 }
+
+.profile-ranking {
+    display: none;
+}
+
+.newuser {
+    display: none;
+}
+
+.tabbed figure { 
+    display: block; 
+    margin-left: 0; 
+    clear: both;
+ }
+ 
+ .tabbed > input,
+ .tabbed figure > div { display: none; }
+ 
+ .tabbed figure>div {
+   padding: 20px;
+   width: 100%;
+   background: #fff;
+   line-height: 1.5em;
+   letter-spacing: 0.3px;
+ }
+
+#tabProfile:checked ~ figure .tabProfile,
+#tabRanking:checked ~ figure .tabRanking { display: block; }
+
+nav label {
+    float: left;
+    padding: 15px 15px;
+    background: hsl(210,50%,50%);
+    color: #eee;
+    width: auto;
+ }
+ 
+ nav label:hover { background: hsl(210,50%,40%); }
+ nav label:active { background: #ffffff; }
+ 
+ #tabProfile:checked ~ nav label[for="tabProfile"],
+ #tabRanking:checked ~ nav label[for="tabRanking"] {
+   background: white;
+   color: #111;
+   position: relative;
+   border-bottom: none;
+ }
+ 
+ #tabProfile:checked ~ nav label[for="tabProfile"]:after,
+ #tabRanking:checked ~ nav label[for="tabRanking"]:after{
+   content: "";
+   display: block;
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background: white;
+   left: 0;
+   bottom: -1px;
+ }

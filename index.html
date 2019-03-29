@@ -12,6 +12,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/toastr.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -38,8 +39,12 @@
         <div class="quiz-item">
           <div class="quiz-item-inner quiz-background-image" style="background-image: url(img/keyboard.jpg)">
             <div class="quiz-question h2">Das ist eine Frage</div>
-            <div class="quiz-answer quiz-answer-correct quiz-hide"><div>Richtig</div> Beschreibung korrekte Antwort</div>
-            <div class="quiz-answer quiz-answer-wrong quiz-hide"><div>Leider falsch</div> Beschreibung falsche Antwort</div>
+            <div class="quiz-answer quiz-answer-correct quiz-hide">
+              <div>Richtig</div> Beschreibung korrekte Antwort
+            </div>
+            <div class="quiz-answer quiz-answer-wrong quiz-hide">
+              <div>Leider falsch</div> Beschreibung falsche Antwort
+            </div>
           </div>
           <div class="selection-list">
             <div class="option" data-value="0" data-answer="wrong">Auswahl Position 0</div>
@@ -55,28 +60,75 @@
     </article>
   </main>
   <div class="modal profile js-modal-profile">
-    <div class="profile-username">
-      <h2 class="js-profile-username"></h2>
-    </div>
-    <hr>
-    <div class="profile-score">
-      <h3>Dein aktueller Punktestand</h3>
-      Deine Punkte: <span class="js-profile-score"></span>
-      <button class="profile-buy">Punkte einlösen</button>
-    </div>
-    <div class="profile-badges">
-      <h3>Deine Badges</h3>
-      <ul class="js-profile-badges">
+    <div class="tabbed">
+      <input checked="checked" id="tabProfile" type="radio" name="tabs" />
+      <input id="tabRanking" type="radio" name="tabs" />
 
-      </ul>
+      <nav>
+        <label for="tabProfile">Profil</label>
+        <label for="tabRanking">Bestenliste</label>
+      </nav>
+
+      <figure>
+        <div class="tabProfile">
+          <div class="profile-username">
+            <h2 class="js-profile-username"></h2>
+          </div>
+          <hr>
+          <div class="profile-score">
+            <h3>Dein aktueller Punktestand</h3>
+            Deine Punkte: <span class="js-profile-score"></span>
+          </div>
+          <div class="profile-badges">
+            <h3>Deine Badges</h3>
+            <ul class="js-profile-badges">
+
+            </ul>
+          </div>
+        </div>
+        <div class="tabRanking">
+          <h2>Bestenliste</h2>
+          <p>Monat: März</p>
+          <ol class="ranking-list js-ranking-list">
+
+          </ol>
+        </div>
+      </figure>
     </div>
+
+  </div>
+  <div class="modal newuser js-modal-newuser">
+    <h2>Willkommen!</h2>
+    <p>Bevor du loslegen kannst musst du ein Benutzerprofil anlegen. Du kannst dann Badges ergattern und Punkte
+      erspielen.</p>
+    <label for="txtUsername">Dein Benutzername:</label>
+    <input id="txtUsername" name="txtUsername"></input>
+    <button onclick="saveNewUser();">Speichern</button>
 
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/toastr.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>');
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": true,
+      "positionClass": "toast-bottom-center",
+      "preventDuplicates": true,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
 
   </script>
   <script src="js/plugins.js"></script>
