@@ -18,8 +18,10 @@ $(document).ready(function() {
 
                 if(answer === "correct") {
                     // init function for correct add score
+                    increaseUserScore(20);
                 } else {
                     // init function for wrong  add score
+                    increaseUserScore(10);
                 }
             };
 
