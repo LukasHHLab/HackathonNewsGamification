@@ -8,6 +8,22 @@ $(document).ready(function () {
     reloadBadgesView();
     $(".js-profile-username").text(user.username);
     loadRankingList();
+
+    var $sections = $('article > section');
+    $sections.hide();
+    $sections.first().show();
+    var i = 1;
+    $sections.each(function(){
+        $(this).on('click', function(){
+            $sections.hide();
+            $sections.eq(i).show();
+            i++;
+        });
+    });
+
+    $('main').slick({
+        'arrows':false
+    });
   }
 
 });

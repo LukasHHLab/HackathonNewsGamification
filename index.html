@@ -7,7 +7,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -16,6 +15,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -39,12 +39,8 @@
         <div class="quiz-item">
           <div class="quiz-item-inner quiz-background-image" style="background-image: url(img/keyboard.jpg)">
             <div class="quiz-question h2">Das ist eine Frage</div>
-            <div class="quiz-answer quiz-answer-correct quiz-hide">
-              <div>Richtig</div> Beschreibung korrekte Antwort
-            </div>
-            <div class="quiz-answer quiz-answer-wrong quiz-hide">
-              <div>Leider falsch</div> Beschreibung falsche Antwort
-            </div>
+            <div class="quiz-answer quiz-answer-correct quiz-hide"><div>Richtig</div> Beschreibung korrekte Antwort</div>
+            <div class="quiz-answer quiz-answer-wrong quiz-hide"><div>Leider falsch</div> Beschreibung falsche Antwort</div>
           </div>
           <div class="selection-list">
             <div class="option" data-value="0" data-answer="wrong">Auswahl Position 0</div>
@@ -54,9 +50,21 @@
           </div>
         </div>
       </section>
+      <section>2</section>
+      <section>3</section>
+      <section>4</section>
     </article>
     <article>
-      <section></section>
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+      <section>4</section>
+    </article>
+    <article>
+      <section>2</section>
+      <section>2</section>
+      <section>3</section>
+      <section>4</section>
     </article>
   </main>
   <div class="modal profile js-modal-profile">
@@ -131,6 +139,7 @@
     }
 
   </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/module/quiz.js"></script>
   <script src="js/main.js"></script>

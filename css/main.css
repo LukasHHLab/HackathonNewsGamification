@@ -102,8 +102,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.header {
+    position: fixed;
+    z-index: 2;
+}
 
-
+article {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: #0099FF;
+    box-sizing: border-box;
+}
 
 
 
