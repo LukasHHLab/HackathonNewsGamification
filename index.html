@@ -27,10 +27,12 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <span class="logo">IStory</span>
+    <span class="logo">istory</span>
     <div class="user js-user" onclick="toggleProfileModal();">
-      <img src="img/icon_user.png" class="user-icon">
-      <span class="user-score js-user-score"></span>
+        <span class="user-icon fa-layers fa-fw">
+            <i class="far fa-user"></i>
+            <span class="fa-layers-counter fa-layers-bottom-right user-score js-user-score"></span>
+          </span>
     </div>
   </header>
   <main class="js-content">
@@ -81,9 +83,9 @@
           </div>
           <div class="profile-badges">
             <h3>Deine Badges</h3>
-            <ul class="js-profile-badges">
+            <div class="js-profile-badges profile-badges">
 
-            </ul>
+            </div>
           </div>
         </div>
         <div class="tabRanking">
@@ -109,6 +111,7 @@
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="js/all.js"></script>
   <script src="js/toastr.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>');
