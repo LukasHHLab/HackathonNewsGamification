@@ -28,8 +28,9 @@ $(document).ready(function() {
             // set options height
             $options.css({'min-height': 50/$options.length + 'vh'});
 
-            $options.on('click', function(){
+            $options.on('click', function(e){
                 if(clickEnable) {
+                    e.stopPropagation();
                     checkOption($(this).data('answer'));
                     clickEnable = false;
                 }

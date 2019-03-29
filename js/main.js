@@ -8,6 +8,37 @@ $(document).ready(function () {
     reloadBadgesView();
     $(".js-profile-username").text(user.username);
     loadRankingList();
+
+    var $articles = $('article');
+    var $sections = $articles.find('> section');
+    var $progressBarContainerS = $articles.find('.progress-bar-container');
+    $sections.hide();
+    $sections.first().show();
+    var i = 1;
+
+    $articles.each(function(){
+        var $barItemContainer = $(this).find('.progress-bar-container');
+        $(this).find('section').each(function(){
+            $('<span class="progress-bar-item bar-item-' + $(this).index() + '"></span>').appendTo($barItemContainer);
+        })
+    });
+
+    var $progressBarItems = $articles.find('.progress-bar-item');
+    $progressBarItems.eq(0).addClass('question-correct');
+
+    $sections.each(function(){
+        $(this).on('click', function(){
+            $sections.hide();
+            $sections.eq(i).show();
+            $progressBarItems.eq(i).addClass('question-correct');
+            i++;
+        });
+    });
+
+    $('main').slick({
+        'arrows':false
+    });
+
   }
 
 });

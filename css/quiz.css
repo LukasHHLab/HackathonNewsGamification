@@ -251,7 +251,14 @@ html.no-touch .quiz-widget .selection-list:not(.disabled) .option:hover {
     left: auto;
 }
 
-.quiz-widget .progress-bar-container {
+.progress-bar {
+    position: fixed;
+    top: 80px;
+    width: 100vw;
+    z-index: 30;
+}
+.progress-bar-container {
+    top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -261,7 +268,7 @@ html.no-touch .quiz-widget .selection-list:not(.disabled) .option:hover {
     flex-direction: row;
 }
 
-.quiz-widget .progress-bar-item {
+.progress-bar-item {
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -272,7 +279,7 @@ html.no-touch .quiz-widget .selection-list:not(.disabled) .option:hover {
     overflow: hidden;
 }
 
-.quiz-widget .progress-bar-item:after {
+.progress-bar-item:after {
     position: absolute;
     display: block;
     content: "";
@@ -286,16 +293,16 @@ html.no-touch .quiz-widget .selection-list:not(.disabled) .option:hover {
     margin-left: -100%;
 }
 
-.quiz-widget .progress-bar-item.question-correct:after,
-.quiz-widget .progress-bar-item.question-wrong:after {
+.progress-bar-item.question-correct:after,
+.progress-bar-item.question-wrong:after {
     margin-left: 0;
 }
 
-.quiz-widget .progress-bar-item.question-correct:after {
+.progress-bar-item.question-correct:after {
     background-color: #009c74;
 }
 
-.quiz-widget .progress-bar-item.question-wrong:after {
+.progress-bar-item.question-wrong:after {
     background-color: #df3900;
 }
 
