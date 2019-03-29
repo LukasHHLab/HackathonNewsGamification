@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,25 +24,50 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! HackthonNewsGamification</p>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-</body>
+
   <head>
 
-  </head>
-  <main>
-    <article>
-      <section></section>
-    </article>
-    <article>
-      <section></section>
-    </article>
-  </main>
-  <div class="modal">
+  <body>
+    <header class="header">
+      <span class="logo">IStory</span>
+      <div class="user" onclick="toggleProfileModal();">
+        <img src="img/icon_user.png" class="user-icon">
+        <span class="user-score js-user-score">100</span>
+      </div>
+    </header>
+    <main class="js-content">
+      <article>
+        <section>test</section>
+      </article>
+      <article>
+        <section></section>
+      </article>
+    </main>
+    <div class="modal profile js-modal-profile">
+      <div class="profile-username">
+        <h2 class="js-profile-username">Max Mustermann</h2>
+      </div>
+      <hr>
+      <div class="profile-score">
+        <h3>Dein aktueller Punktestand</h3>
+        Deine Punkte: <span class="js-profile-score">100</span>
+        <button class="profile-buy">Punkte einlösen</button>
+      </div>
+      <div class="profile-badges">
+        <h3>Deine Badges</h3>
+        <ul class="js-profile-badges">
 
-  </div>
-</html>
+        </ul>
+      </div>
+
+    </div>
+  </body>
