@@ -151,6 +151,26 @@ function loadRankingList() {
     {
       "username": "Allan",
       "score": 45
+    },
+    {
+      "username": "Feiko",
+      "score": 60
+    },
+    {
+      "username": "Patrick",
+      "score": 59
+    },
+    {
+      "username": "Marc",
+      "score": 85
+    },
+    {
+      "username": "Stefan",
+      "score": 80
+    },
+    {
+      "username": "Joachim",
+      "score": 70
     }
   ];
 
