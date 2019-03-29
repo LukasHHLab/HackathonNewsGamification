@@ -1,0 +1,37 @@
+
+body {
+  margin: 0;
+  top: 0;
+
+}
+
+.logo {
+  color: darkblue;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 24pt;
+  margin-left: 10px;
+}
+
+.header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  background: lightgray;
+  justify-content: space-between;
+}
+
+.user {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.user-icon {
+  height: 48px;
+  width: auto;
+}
+
+.modal {
+    display: none;
+}
