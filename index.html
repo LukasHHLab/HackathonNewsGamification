@@ -24,6 +24,39 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <header class="header">
+    <span class="logo">IStory</span>
+    <div class="user" onclick="toggleProfileModal();">
+      <img src="img/icon_user.png" class="user-icon">
+      <span class="user-score js-user-score">100</span>
+    </div>
+  </header>
+  <main class="js-content">
+    <article>
+      <section>test</section>
+    </article>
+    <article>
+      <section></section>
+    </article>
+  </main>
+  <div class="modal profile js-modal-profile">
+    <div class="profile-username">
+      <h2 class="js-profile-username">Max Mustermann</h2>
+    </div>
+    <hr>
+    <div class="profile-score">
+      <h3>Dein aktueller Punktestand</h3>
+      Deine Punkte: <span class="js-profile-score">100</span>
+      <button class="profile-buy">Punkte einlösen</button>
+    </div>
+    <div class="profile-badges">
+      <h3>Deine Badges</h3>
+      <ul class="js-profile-badges">
+
+      </ul>
+    </div>
+
+  </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -33,41 +66,6 @@
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+</body>
 
-  <head>
-
-  <body>
-    <header class="header">
-      <span class="logo">IStory</span>
-      <div class="user" onclick="toggleProfileModal();">
-        <img src="img/icon_user.png" class="user-icon">
-        <span class="user-score js-user-score">100</span>
-      </div>
-    </header>
-    <main class="js-content">
-      <article>
-        <section>test</section>
-      </article>
-      <article>
-        <section></section>
-      </article>
-    </main>
-    <div class="modal profile js-modal-profile">
-      <div class="profile-username">
-        <h2 class="js-profile-username">Max Mustermann</h2>
-      </div>
-      <hr>
-      <div class="profile-score">
-        <h3>Dein aktueller Punktestand</h3>
-        Deine Punkte: <span class="js-profile-score">100</span>
-        <button class="profile-buy">Punkte einlösen</button>
-      </div>
-      <div class="profile-badges">
-        <h3>Deine Badges</h3>
-        <ul class="js-profile-badges">
-
-        </ul>
-      </div>
-
-    </div>
-  </body>
+</html>

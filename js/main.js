@@ -36,8 +36,9 @@ let user = {
   }
 
   function toggleProfileModal() {
-    $(".js-modal-profile").toggle();
-    $(".js-content").toggle();
+    $(".js-modal-profile").slideToggle();
+    $(".js-modal-profile").toggleClass("active");
+    $(".js-content").slideToggle();
     reloadScoreView();
   }
 

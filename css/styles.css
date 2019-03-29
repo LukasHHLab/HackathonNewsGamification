@@ -34,4 +34,5 @@ body {
 
 .modal {
     display: none;
+    background: lightblue;
 }
