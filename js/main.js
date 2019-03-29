@@ -132,6 +132,7 @@ function toggleNewUserModal() {
 
 function loadRankingList() {
   var user = loadUser();
+  $(".js-ranking-list").empty();
   var ranking = [{
       "username": "Peter",
       "score": 10
