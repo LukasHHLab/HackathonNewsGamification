@@ -139,3 +139,7 @@ nav label:active {
   left: 0;
   bottom: -1px;
 }
+
+.modal {
+    padding-top: 80px;
+}
