@@ -46,8 +46,19 @@ let user = {
     user.score += value;
     reloadScoreView();
   }
-$(document).ready(function () {
-    var myElement = $('.active')[0];
+
+    function addBadge(badgeName, earnedAt, badgeDescription) {
+        user.badges.push({
+            "badgeName": badgeName,
+            "badgeDescription": badgeDescription,
+            "earnedAt": earnedAt
+        });
+
+        reloadBadgesView();
+    }
+
+    $(document).ready(function () {
+    var myElement = $('article.active')[0];
     var mc = new Hammer(myElement);
 
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
@@ -61,6 +72,7 @@ $(document).ready(function () {
             prev = $('article').last();
         }
         prev.addClass('active');
+        prev.find('section').first().addClass('active');
     };
 
     var nextArticle = function () {
@@ -72,6 +84,7 @@ $(document).ready(function () {
         }
 
         next.addClass('active');
+        next.find('section').first().addClass('active');
     };
 
     var nextSection = function () {
@@ -101,12 +114,3 @@ $(document).ready(function () {
         }
     });
 });
-  function addBadge(badgeName, earnedAt, badgeDescription) {
-    user.badges.push({
-      "badgeName": badgeName,
-      "badgeDescription": badgeDescription,
-      "earnedAt": earnedAt
-    });
-
-    reloadBadgesView();
-  }

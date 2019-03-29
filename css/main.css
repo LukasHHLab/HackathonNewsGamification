@@ -299,14 +299,15 @@ main {
     overflow: hidden;
 }
 article {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     }
 article.active {
-    background-color: silver;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
 }
 
 section {
