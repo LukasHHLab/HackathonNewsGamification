@@ -13,9 +13,10 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
-
 </head>
 
 <body>
@@ -24,21 +25,30 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/vendor/hammer.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <head>
-
-  </head>
-  <main>
-    <article class="active">
-      <section class="active">1.1</section>
-      <section>1.2</section>
-      <section>1.3</section>
-      <section>1.4</section>
+  <header class="header">
+    <span class="logo">IStory</span>
+    <div class="user" onclick="toggleProfileModal();">
+      <img src="img/icon_user.png" class="user-icon">
+      <span class="user-score js-user-score">100</span>
+    </div>
+  </header>
+  <main class="js-content">
+    <article>
+      <section class="quiz-widget">
+        <div class="quiz-item">
+          <div class="quiz-item-inner quiz-background-image" style="background-image: url(img/keyboard.jpg)">
+            <div class="quiz-question h2">Das ist eine Frage</div>
+            <div class="quiz-answer quiz-answer-correct quiz-hide"><div>Richtig</div> Beschreibung korrekte Antwort</div>
+            <div class="quiz-answer quiz-answer-wrong quiz-hide"><div>Leider falsch</div> Beschreibung falsche Antwort</div>
+          </div>
+          <div class="selection-list">
+            <div class="option" data-value="0" data-answer="wrong">Auswahl Position 0</div>
+            <div class="option" data-value="1" data-answer="correct">Auswahl Position 1</div>
+            <div class="option" data-value="2" data-answer="wrong">Auswahl Position 2</div>
+            <div class="option" data-value="3" data-answer="wrong">Auswahl Position 3</div>
+          </div>
+        </div>
+      </section>
     </article>
     <article>
       <section>2.1</section>
@@ -47,8 +57,34 @@
       <section>2.4</section>
     </article>
   </main>
-  <div class="modal">
+  <div class="modal profile js-modal-profile">
+    <div class="profile-username">
+      <h2 class="js-profile-username">Max Mustermann</h2>
+    </div>
+    <hr>
+    <div class="profile-score">
+      <h3>Dein aktueller Punktestand</h3>
+      Deine Punkte: <span class="js-profile-score">100</span>
+      <button class="profile-buy">Punkte einlösen</button>
+    </div>
+    <div class="profile-badges">
+      <h3>Deine Badges</h3>
+      <ul class="js-profile-badges">
+
+      </ul>
+    </div>
 
   </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/module/quiz.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
