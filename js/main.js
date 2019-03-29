@@ -36,7 +36,8 @@ $(document).ready(function () {
     });
 
     $('main').slick({
-        'arrows':false
+        'arrows':false,
+        'infinite': false
     });
 
   }
