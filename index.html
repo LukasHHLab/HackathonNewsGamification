@@ -26,9 +26,9 @@
   <!-- Add your site or application content here -->
   <header class="header">
     <span class="logo">IStory</span>
-    <div class="user" onclick="toggleProfileModal();">
+    <div class="user js-user" onclick="toggleProfileModal();">
       <img src="img/icon_user.png" class="user-icon">
-      <span class="user-score js-user-score">100</span>
+      <span class="user-score js-user-score"></span>
     </div>
   </header>
   <main class="js-content">
@@ -41,12 +41,12 @@
   </main>
   <div class="modal profile js-modal-profile">
     <div class="profile-username">
-      <h2 class="js-profile-username">Max Mustermann</h2>
+      <h2 class="js-profile-username"></h2>
     </div>
     <hr>
     <div class="profile-score">
       <h3>Dein aktueller Punktestand</h3>
-      Deine Punkte: <span class="js-profile-score">100</span>
+      Deine Punkte: <span class="js-profile-score"></span>
       <button class="profile-buy">Punkte einlösen</button>
     </div>
     <div class="profile-badges">
