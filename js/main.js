@@ -53,9 +53,9 @@ function initUser(username) {
         "badgeDescription": "Erstelle ein Benutzerprofil."
       },
       {
-        "badgeName": "NewsFindMe",
+        "badgeName": "news_find_me",
         "badgeIcon": "fas fa-newspaper",
-        "badgeDescription": "Nimm am NewsFindMe-Hackathon teil."
+        "badgeDescription": "Nimm am news_find_me-Hackathon teil."
       }
     ]
   };
