@@ -32,13 +32,15 @@ $(document).ready(function () {
             $sections.eq(i).show();
             $progressBarItems.eq(i).addClass('question-correct');
             i++;
+            increaseUserScore(5);
         });
     });
 
     $('main').slick({
-        'arrows':false
+        arrows:false,
+        dots: true,
+        infinite: false
     });
-
   }
 
 });

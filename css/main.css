@@ -120,7 +120,42 @@ section {
     background-size: cover;
 }
 
+.slick-dots {
+    position: fixed;
+    top: 95px;
+    bottom: auto !important;
+    z-index: 60;
+}
 
+.slick-dots li button:before {
+    font-size: 45px !important;
+}
+
+.range {
+    margin: 0 30px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    position: relative;
+    top: 145px;
+}
+
+.range-question {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.covervid-wrapper {
+    margin-top: 75px;
+}
+
+.masthead-video {
+    width: 100%;
+    height: auto;
+}
 
 
 

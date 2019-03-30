@@ -11,13 +11,15 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/toastr.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/rangeslider.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/slick-theme.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -43,50 +45,103 @@
       <section>
         <div class="covervid-wrapper">
           <video class="masthead-video" autoplay loop muted poster="">
-            <source src="video/IMG_0013.mp4" />
-            /Users/ewgenijmauch/PhpstormProjects/HackathonNewsGamification/
-          </video>
-        </div>
-        <div class="covervid-wrapper">
-          <video class="covervid-video" autoplay loop poster="">
-            <source src="video/IMG_0013.mp4" type="video/mp4">
+            <source src="video/01.mp4" />
           </video>
         </div>
       </section>
-      <section class="background-image" style="background-image: url(img/Osnabrueck_NOZ.jpg)"></section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/02.mp4" />
+          </video>
+        </div>
+      </section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/03.mp4" />
+          </video>
+        </div>
+      </section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/04.mp4" />
+          </video>
+        </div>
+      </section>
       <section class="quiz-widget">
         <div class="quiz-item">
-          <div class="quiz-item-inner quiz-background-image" style="background-image: url(img/keyboard.jpg)">
-            <div class="quiz-question h2">Das ist eine Frage</div>
-            <div class="quiz-answer quiz-answer-correct quiz-hide"><div>Richtig</div> Beschreibung korrekte Antwort</div>
-            <div class="quiz-answer quiz-answer-wrong quiz-hide"><div>Leider falsch</div> Beschreibung falsche Antwort</div>
+          <div class="quiz-item-inner quiz-background-image" style="background-image: url(video/05.jpg)">
+            <div class="quiz-question h2">QUIZ: – mit welcher Fläche ist das etwa vergleichbar?</div>
+            <div class="quiz-answer quiz-answer-correct quiz-hide"><div>Richtig</div> Das entspricht etwa 2500 km2 Fläche.</div>
+            <div class="quiz-answer quiz-answer-wrong quiz-hide"><div>Leider falsch</div></div>
           </div>
           <div class="selection-list">
-            <div class="option" data-value="0" data-answer="wrong">Auswahl Position 0</div>
-            <div class="option" data-value="1" data-answer="correct">Auswahl Position 1</div>
-            <div class="option" data-value="2" data-answer="wrong">Auswahl Position 2</div>
-            <div class="option" data-value="3" data-answer="wrong">Auswahl Position 3</div>
+            <div class="option" data-value="0" data-answer="wrong">Hamburg</div>
+            <div class="option" data-value="1" data-answer="correct">Saarland</div>
+            <div class="option" data-value="2" data-answer="wrong">Bodensee</div>
+            <div class="option" data-value="3" data-answer="wrong">New York</div>
           </div>
         </div>
       </section>
       <section>
-          <p style="margin-top:450px"></p>
-          <span class="range-question">Frage....</span>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/06.mp4" />
+          </video>
+        </div>
+      </section>
+      <section>
+      <div class="covervid-wrapper">
+        <video class="masthead-video" autoplay loop muted poster="">
+          <source src="video/07.mp4" />
+        </video>
+      </div>
+      </section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/08.mp4" />
+          </video>
+        </div>
+      </section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/09.mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="background-image" style="background-image: url(video/10.jpg)">3</section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/11.mp4" />
+          </video>
+        </div>
+      </section>
+      <section>
+        <div class="covervid-wrapper">
+          <video class="masthead-video" autoplay loop muted poster="">
+            <source src="video/12.mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="background-image" style="background-image: url(video/13.jpg)">
+        <div class="range">
+          <span class="range-question">Quiz Wie	viel Hilfe haben die Vereinten Nationen bisher gegeben?</span>
           <input
                   type="range"
-                  min="10"
-                  max="1000"
+                  min="1"
+                  max="100"
                   step="10"
                   value="300"
                   data-orientation="horizontal"
               >
           <output></output>
+        </div>
       </section>
-      <section>3</section>
-      <section class="background-image" style="background-image: url(img/Osnabrueck_NOZ.jpg)">
-      </section>
-      <section class="background-image" style="background-image: url(img/150831731.jpg)">3</section>
-      <section>4</section>
     </article>
     <article>
       <div class="progress-bar"><div class="progress-bar-container clearfix"></div></div>
