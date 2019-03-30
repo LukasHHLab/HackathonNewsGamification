@@ -12,7 +12,7 @@ $(document).ready(function () {
     var $articles = $('article');
     var $sections = $articles.find('> section');
     $sections.hide();
-    $sections.first().show();
+
     var i = 1;
 
     $articles.each(function(){
@@ -33,6 +33,7 @@ $(document).ready(function () {
             i++;
             increaseUserScore(5);
         });
+        $(this).eq(0).show();
     });
 
     $('main').slick({
