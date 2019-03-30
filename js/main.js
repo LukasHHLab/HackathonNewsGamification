@@ -11,7 +11,6 @@ $(document).ready(function () {
 
     var $articles = $('article');
     var $sections = $articles.find('> section');
-    var $progressBarContainerS = $articles.find('.progress-bar-container');
     $sections.hide();
     $sections.first().show();
     var i = 1;
