@@ -25,9 +25,9 @@ $(document).ready(function () {
         // Callback function
         onSlideEnd: function (position, value) {
             if (value > 480) {
-                window.alert("super");
+                //window.alert("super");
             } else {
-                window.alert(".....");
+                //window.alert(".....");
             }
         }
     });
